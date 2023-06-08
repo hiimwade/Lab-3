@@ -109,8 +109,13 @@ def process_sales_data(sales_csv_path, orders_dir_path):
         format2 = workbook.add_format({"num_format": "0%"})
 
         #Set the column width and format.
-        worksheet.set_column(1, 1, 18, format1)
-        
+        worksheet.set_column(0, 0, 11, format1)
+        worksheet.set_column(1, 1, 13, format1)
+        worksheet.set_column(2, 4, 15, format1)
+        worksheet.set_column(5, 6, 13, format1)
+        worksheet.set_column(4, 4, 15, format1)
+        worksheet.set_column(7, 7, 10, format1)
+        worksheet.set_column(8, 8, 30, format1)
 
         #Set the format but not the column width.
         worksheet.set_column(5, 6, None, format1)
